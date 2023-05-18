@@ -1,0 +1,41 @@
+.message {
+  width: max-content;
+  background-color: lightblue;
+  border-radius: 4px;
+  padding: 4px;
+  margin-bottom: 8px;
+
+  &__meta {
+    font-size: 8px;
+  }
+
+  &--my {
+    position: relative;
+    left: 100%;
+    transform: translateX(-100%);
+    &::after {
+      content: '';
+      position: absolute;
+      // bottom: -10%;
+      right: 0;
+      border-style: solid;
+      border-width: 10px 0 0 10px;
+      border-color: lightblue transparent transparent transparent;
+    }
+  }
+
+  &--other {
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      // bottom: -10%;
+      left: 0;
+      border-style: solid;
+      border-width: 10px 10px 0 0;
+      border-color: lightblue transparent transparent transparent;
+    }
+  }
+}
+
