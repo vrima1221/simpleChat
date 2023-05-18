@@ -35,7 +35,7 @@ export const ChatWindow: React.FC<Props> = ({ socket, room, username }) => {
 
       await socket.emit('send_message', messageData);
       setMessageList(prev => [...prev, messageData]);
-      // setCurrentMessage('');
+      setCurrentMessage('');
     }
   };
 
