@@ -1,9 +1,11 @@
 .message {
-  width: max-content;
   background-color: lightblue;
   border-radius: 4px;
   padding: 4px;
   margin-bottom: 8px;
+  overflow-wrap: break-word;
+  max-width: 80%;
+
 
   &__meta {
     font-size: 8px;
